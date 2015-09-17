@@ -1,0 +1,23 @@
+[user]
+	email = Airy
+[core]
+	quotepath = false
+	excludesfile = /Users/mike/.gitignore_global
+	editor = nano
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+  cm = commit -m
+  aa = add --all
+  rv = remote -v
+  w = whatchanged
+[push]
+	default = matching
